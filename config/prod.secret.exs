@@ -15,5 +15,5 @@ config :discuss, Discuss.Endpoint,
 config :discuss, Discuss.Repo,
   adapter: Ecto.Adapters.Postgres,
   ssl: true,
-  url: database_url,
+  url: "postgresql-cubic-11434",
   pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10")
